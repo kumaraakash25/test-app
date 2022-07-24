@@ -1,0 +1,10 @@
+db:
+  schema: TEST_SCHEMA_2
+  audit:
+    table: CONFIG_MAP_2
+    mapping_table: COMFIG_MAP_AUDIT_2
+    audit_mode: C
+    audit_retention: 1 #month
+
+
+
