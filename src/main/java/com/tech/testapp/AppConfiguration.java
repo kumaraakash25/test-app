@@ -1,20 +1,12 @@
 package com.tech.testapp;
 
 import com.tech.sharedapp.service.PreProcessorService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
-import javax.annotation.PostConstruct;
-
-@Configuration
+//@Configuration
+//@ComponentScan(basePackages = "com.tech.shareapp.service")
+//@Import(PreProcessorService.class)
 public class AppConfiguration {
-
-    @Autowired
-    PreProcessorService preProcessorService;
-
-    @PostConstruct
-    public void initialiseAudit() {
-        preProcessorService.initialiseAudit();
-    }
 
 }
